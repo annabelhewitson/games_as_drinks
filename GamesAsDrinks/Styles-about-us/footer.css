@@ -1,0 +1,363 @@
+/* Master Font Here!! */
+body{
+    font-family:'Roboto', sans-serif;;
+    margin: 0;
+}
+
+/* Header starts here!! */
+.Header{
+   background-color: #ffb511; 
+  	top: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Title starts here!! */
+.Title{
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: center;
+}
+/* Title ends here!! */
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+    /* Navigation Hamburger button*/
+  .Hamburger {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    cursor: pointer;
+    font-size: 36px
+
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  * {box-sizing:border-box}
+
+
+/* Search Funtion starts here!! */
+#headersearch input::-webkit-search-decoration,
+#headersearch input::-webkit-search-cancel-button {
+	display: none; 
+}
+#headersearch input[type=search] {
+  outline: none;
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+  float: right;
+  background: #ffb511 url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: 2px solid black;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+#headersearch input[type=search]:hover {
+	background-color: #fff;
+}
+#headersearch input[type=search]:focus {
+	width: 150px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+  width: 130px;
+	background-color: #fff;
+	border: 2px solid black;
+}
+#headersearch input:-moz-placeholder {
+	color: transparent;
+}
+#headersearch input::-webkit-input-placeholder {
+	color: transparent;
+}
+
+input{
+    float: right;
+    align-content: center;
+}
+
+.search{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+/* Search Function ends here!! */
+
+/* Header ends here!! */
+
+/* image Carousel starts here!! */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: gray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #ffb511;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ffb511;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.img-carousel {
+  max-width:100%;
+  height:auto;
+}
+
+/* image Carousel ends here!! */
+
+/* About GAD starts here!! */
+.About-Info-Title{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.About-Info-Text{
+    height: 100px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 80vw;
+    word-wrap: normal;
+}
+
+/* About GAD ends here!! */
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer starts here!! */
+/* CFG Socials starts here!! */
+
+.CFG-Table{
+   text-align: center;
+   padding-top: 10px;
+   padding-left: 50px;
+}
+
+.CFG-Table-Title{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.Socials{
+    letter-spacing: 20px;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.fa-facebook-f:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.fa-twitter:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.fa-linkedin-in:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.fa-instagram:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.CFG-Website:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* CFG Socials end here!! */
+
+/* Quick Links start here!! */
+.Footer-Quick-Links-Title{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+    margin: 0;
+}
+
+.Footer-Links-List-Items{
+    font-size: 15px;
+    text-align: right;
+}
+.Footer-Links-List-Items:hover{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.Links-Table{
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* Quick Links end here!! */
+
+
+/* Footer Table CSS Starts here!! */
+
+.Left-Table { width: 75%; float: left; }
+.Right-Table {float: right; }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other on screens that are smaller than 600 px */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+/* Footer Table CSS ends here!! */
+
+footer{
+    background-color: #ffb511;
+    margin-top: auto;
+  	bottom: 0;
+    width: 100%;
+    }

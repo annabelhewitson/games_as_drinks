@@ -1,0 +1,105 @@
+
+.mainBox {
+    /* display: flex;
+    flex-wrap: wrap; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* padding-left: 15px; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainBox {
+     margin-left: none;
+     margin-right: none;
+     box-shadow: none;
+    }
+  }
+
+.body {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    margin: 0;
+}
+
+main {
+    margin-left: 15%;
+    margin-right: 150px;
+}
+
+.mainHeading {
+    color: rgb(27, 26, 24);
+    /* font-size: 40px; */
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.mainPara {
+    color: rgb(27, 26, 24);
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    /* padding-top: 20px; */
+}
+
+.button {
+    display: block;
+    padding: 0.3em 1.2em;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    border: 0.16em solid #93b3d9;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+    background-color: #93b3d9;
+    color: white;
+    text-shadow: 0 0.04em 0.04em #00000059;
+    text-align: center;
+    transition: all 0.2s;
+    margin-bottom: 50px;
+    /* margin-left: 50px;
+    margin-right: 50px;; */
+  }
+
+  .button:hover {
+    opacity: 70%;
+  }
+
+  .randomisedDrinkContainer {
+    /* display: flex;
+    flex-wrap: wrap; */
+    min-width: 250px;
+    max-width: 300px;
+    vertical-align: middle;
+    /* margin-top: 8px; */
+    margin-bottom: 8px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+
+  .randomisedDrinkContainer a {
+    margin-top: 1px;
+    color: #93b3d9;
+  }
+
+  .randomisedDrinkContainer a:hover {
+    opacity: 70%;
+  }
+
+  .randomisedDrinkContainer img {
+      max-width: 300px;
+      min-width: 250px;
+      margin-bottom: 4px;
+  }

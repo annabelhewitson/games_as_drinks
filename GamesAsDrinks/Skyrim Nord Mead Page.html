@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyrim Nord Mead</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/Drink Favicon.png" >
+    <link rel="stylesheet" href="./Individual_Drinks/Skyrim Nord Mead/Styles/Drink Template.css">
+    <link rel="stylesheet" href="./Individual_Drinks/Skyrim Nord Mead/Styles/header-nav.css">
+    <link rel="stylesheet" href="./Individual_Drinks/Skyrim Nord Mead/Styles/footer.css">
+    <script src="https://kit.fontawesome.com/95c264b0d3.js" crossorigin="anonymous"></script>
+    <script src="./Individual_Drinks/Skyrim Nord Mead/javascript/javascript.js"></script>
+</head>
+
+<body>
+
+    
+    <!-- Header starts here!! -->
+    <header class="Header">
+        <h1 class="Title">Games As Drinks</h1>
+
+        <!-- Navigation starts here!! -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="./About Us.html">About Us</a>
+            <a href="./all drinks.html">All Drinks</a>
+            <a href="./randomiser.html">Randomiser</a>
+            <a href="./Hades wine page.html">Hades Drink</a>
+            <a href="./Skyrim Nord Mead Page.html">Skyrim Drink</a>
+            <a href="./Animal Crossing Smoothie.html">Animal Crossing Drink</a>
+            <a href="./Witcher Swallow page.html">The Witcher 3 Drink</a>
+            <a href="./Katamari Stacked Milkshake.html">Katamari Damacy Drink</a>
+            <a href="./Okami Sake.html">Ōkami Drink</a>
+            <a href="./Kirby Boba.html">Kirby All Stars Drink</a>
+            <a href="./Outer Worlds.html">Outer Worlds</a>
+        </div>
+      
+      <span onclick="openNav()" class="Hamburger">☰</span>
+      <!-- Navigation ends here!! -->
+
+      <!-- Search Function starts here!! -->
+      <div class="search">
+      <form id="headersearch">
+        <input type="search" placeholder="Search">
+      </form>
+      </div>
+      <!-- Search Funtion ends here!! -->
+
+    </header>
+    <!-- Header ends here!! -->
+
+
+    
+    <main>
+        
+        <div class="articles">
+            <div class="firstRow">
+                
+                <!-- image of drink is here (my attempt at doing a modal but it didnt work, still trying tho lol) -->
+                
+                <article>
+                    <!-- Trigger the Modal -->
+                    <img id="myImg" src="./images/skyrim.png" alt="drink" style="width:100%;max-width:500px">
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                      
+                        <!-- Modal Content (The image) -->
+                        <img class="modal-content" id="img01">
+                      
+                        <!-- Modal Caption (image Text) -->
+                        <div id="caption"></div>
+                        
+                    </div>
+
+                    <!-- end of image here -->
+
+                </article>
+
+                 <!-- drink recipe is here -->
+                <article class="firstRow__recipe">
+                    
+                    <h1 class="main-heading">Nord Mead</h1>
+
+                    <h2 style="margin-top: 10px;">Strong & Aromatic </h2>
+
+
+                    <p>
+                         From The Elder Scrolls V: Skyrim, mead is considered the nectar of Shor, and is the finest drink ever to grace Nordic lips.
+                    </p>
+
+                    <p>"I drink it morning, noon, and eve.</p>
+                   <p>I like it spiced and sweet and powerful,</p>
+                   <p>I'll soon be drunk and that's quite probable,</p>
+
+
+                   <p>Mead, mead, mead!"</p>
+                   <a id="myImg" href="https://en.uesp.net/wiki/Lore:Mead,_Mead,_Mead!" style="padding-top: 10px; color: #ffb511;">— 'A Drinking Song' (Elder Scrolls Online)</a>
+
+                </article>
+                <!-- end of drink recipe here -->
+
+            </div>
+            
+            
+            <div>
+
+                <hr class="dotted">
+
+                <!-- description of drink is here -->
+                <article class="secondRow__desc">
+
+                    <p>
+                        Mead (also called Nord Mead, or Honey Wine by the Altmer) is an alcoholic beverage made from fermented honey and water, alternatively with molasses, and sometimes strained with mashed grains. 
+                    </p>
+
+                    <p>
+                        Known for it’s incredibly vibrant aromatics and flavors, which bear a strong resemblance to those of Scotch Whisky, It is a very popular drink that can be found primarily in the province of Skyrim, but it can also be seen across the continent of Tamriel.
+                    </p>
+
+                    <p>
+                        The Elder Scrolls V: Skyrim is an open world action role-playing video game developed by Bethesda Game Studios and published by Bethesda Softworks.
+                    </p>
+
+                    <!-- Change my name to your name here! -->
+                    <p>Illustrated by <a id="myImg" style="color: #ffb114;" href="./About Us.html">Annie Hathaway</a></p>
+                    
+                </article>
+                <!-- end of description of drink here -->
+
+            </div>
+            
+            <!-- link to game is here // Change the name to your game & Change the link to the game website! -->
+            <div class= "gameLink_container">
+
+                <a href="https://elderscrolls.bethesda.net/en/skyrim">
+
+                    <button class="gameLink_text" target="_blank">Read more about The Elder Scrolls V: Skyrim here!</button>
+
+                </a>
+                
+            </div>
+            <!-- end of link to game -->
+            
+            <div>
+                <div>
+                    <!-- Recommendation header is here -->
+                    <h2 class="header2">If you like this, you may like:</h2>
+                </div>
+                
+                <!-- images of recommendations are here -->
+                <div class="recimagesGroup">
+                    <div id="myImg">
+                        <a href="./Hades wine page.html">
+                            <img id="myImg" class="recimage" src="./images/hades.png" alt="1">
+                        </a>
+                        <p class="recimage__text">Hades</p>
+                    </div>
+
+                    <div id="myImg">
+                        <a href="Witcher Swallow page.html">
+                            <img class="recimage" src="./images/witcher.jpg" alt="2">
+                        </a>
+                        <p class="recimage__text">The Witcher 3</p>
+                    </div>
+                    
+                    <div id="myImg">
+                        <a href="./Animal Crossing Smoothie.html">
+                            <img  class="recimage" src="./images/animal_crossing.png" alt="3">
+                        </a>
+                        <p class="recimage__text">animal-crossing</p>
+                    </div>
+                </div>
+                <!-- end of images of recommendations here -->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer starts here!! -->
+    <footer>
+
+        <div class="Container">
+            <div class="Left-Table">
+                <table class="CFG-Table">
+                    <tr>
+                      <th class="CFG-Table-Title">A huge thanks to 
+                        <a href="https://codefirstgirls.org.uk/"target="_blank" class="CFG-Website">Code First Girls</a>  
+                          for running this course!</th>
+                    </tr>
+                    <tr>
+                      <td class="Socials">
+                        <a href="https://www.instagram.com/codefirstgirls/" role="button" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://www.facebook.com/codefirstgirls" role="button" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="https://twitter.com/CodeFirstGirls" role="button" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://www.linkedin.com/company/code-first-girls" role="button" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                      </td>
+                    </tr>
+                  </table>
+            
+            </div>
+            
+            
+            <!-- Quick Links starts here!! -->
+            <div class="Right-Table">
+                <table class="Links-Table">
+                    <tr>
+                     <th class="Footer-Quick-Links-Title">Quick Links</th>
+                    </tr>
+                     <tr><td class="Footer-Links-List-Items"><a href="./index.html">Home</a></td></tr>
+                     <tr></tr><td class="Footer-Links-List-Items"><a href="./About Us.html">About Us</a></td></tr>
+                     <tr></tr><td class="Footer-Links-List-Items"><a href="./all drinks.html">All Drinks</a></td></tr>
+                     <tr><td class="Footer-Links-List-Items"><a href="./randomiser.html">Randomiser</a></td></tr>
+                </table>
+            </div>
+        </div>
+            <!-- Quick Links end here!! -->
+
+    </footer> 
+</body>
+</html>

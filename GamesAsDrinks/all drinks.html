@@ -1,0 +1,210 @@
+<!-- using code from https://www.w3schools.com/howto/howto_js_filter_elements.asp as a basis for the filterable list -->
+<!-- code for nav by Ellie :) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Drinks</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/Drink Favicon.png" >
+    <link rel="stylesheet" href="./scripts-all-drinks/header-nav.css">
+    <link rel="stylesheet" href="./scripts-all-drinks/footer.css">
+    <script src="https://kit.fontawesome.com/95c264b0d3.js" crossorigin="anonymous"></script>
+    <script src="./Javascript/all drinks.js"></script>
+    <script src="./Javascript/javascript-all-drinks.js"></script>
+</head>
+
+<body>
+
+    
+    <!-- Header starts here!! -->
+    <header class="Header">
+        <h1 class="Title">Games As Drinks</h1>
+
+        <!-- Navigation starts here!! -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="./About Us.html">About Us</a>
+            <a href="./all drinks.html">All Drinks</a>
+            <a href="./randomiser.html">Randomiser</a>
+            <a href="./Hades wine page.html">Hades Drink</a>
+            <a href="./Skyrim Nord Mead Page.html">Skyrim Drink</a>
+            <a href="./Animal Crossing Smoothie.html">Animal Crossing Drink</a>
+            <a href="./Witcher Swallow page.html">The Witcher 3 Drink</a>
+            <a href="./Katamari Stacked Milkshake.html">Katamari Damacy Drink</a>
+            <a href="./Okami Sake.html">Ōkami Drink</a>
+            <a href="./Kirby Boba.html">Kirby All Stars Drink</a>
+            <a href="./Outer Worlds.html">Outer Worlds</a>
+        </div>
+      
+      <span onclick="openNav()" class="Hamburger">☰</span>
+      <!-- Navigation ends here!! -->
+
+      <!-- Search Function starts here!! -->
+      <div class="search">
+      <form id="headersearch">
+        <input type="search" placeholder="Search">
+      </form>
+      </div>
+      <!-- Search Funtion ends here!! -->
+
+    </header>
+    <!-- Header ends here!! -->
+
+
+
+
+
+
+
+
+
+    <!------------------** MY CODE HERE **------------------>
+
+<link rel="stylesheet" href="./scripts-all-drinks/all drinks.css">
+<script src="./Javascript/all drinks.js"></script> 
+
+<body onload="filterSelection('all')"></body>
+
+<!-- Control buttons -->
+<div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('cozy')"> Cozy games</button>
+    <button class="btn" onclick="filterSelection('action')"> Action</button>
+    <button class="btn" onclick="filterSelection('roguelike')"> Rogue-like</button>
+    <button class="btn" onclick="filterSelection('fantasy')"> Fantasy</button>
+    <button class="btn" onclick="filterSelection('RPG')"> RPGs</button>
+    <button class="btn" onclick="filterSelection('alcoholic')"> Alcoholic Drinks</button>
+    <button class="btn" onclick="filterSelection('soft')"> Soft Drinks</button>
+  </div>
+
+<!-- <div class="block"></div> -->
+
+<!-- filterable elements, multiple class names let them fit under multiple tags -->
+    
+    <div class="container">
+        
+        <div class="filterDiv Skyrim all RPG fantasy action alcoholic">
+            <a href="./Skyrim Nord Mead Page.html"> <!-- replace this hash with individual page for each drink -->
+                <img src="./images/skyrim.png" alt="Skyrim image">
+            </a>
+            <p class="imageText">Skyrim</p>
+        </div>
+
+        <div class="filterDiv AnimalCrossing all cozy soft">
+            <a href="./Animal Crossing Smoothie.html">
+                <img src="./images/animal_crossing.png" alt="Animal Crossing image">
+            </a>
+            <p class="imageText">Animal Crossing</p>
+        </div>
+
+        <div class="filterDiv Witcher all fantasy action alcoholic">
+            <a href="./Witcher Swallow page.html">
+                <img src="./images/witcher.jpg" alt="Witcher image">
+            </a>
+            <p class="imageText">The Witcher 3</p>
+        </div>
+
+        <div class="filterDiv Ookami all fantasy action alcoholic">
+            <a href="./Okami Sake.html">
+                <img src="./images/ookami.png" alt="Ookami image">
+            </a>
+            <p class="imageText">Ookami</p>
+        </div>
+
+        <div class="filterDiv Kirby all fantasy action soft">
+            <a href="./Kirby Boba.html">
+                <img src="./images/kirby.png" alt="Kirby image">
+            </a>
+            <p class="imageText">Kirby</p>
+        </div>
+
+        <div class="filterDiv Hades all roguelike fantasy action alcoholic">
+            <a href="./Hades wine page.html">
+                <img src="./images/hades.png" alt="Hades image">
+            </a>
+            <p class="imageText">Hades</p>
+        </div>
+
+        <div class="filterDiv Katamari all cozy soft">
+            <a href="./Katamari Stacked Milkshake.html">
+                <img src="./images/katamari.png" alt="Katamari image">
+            </a>
+            <p class="imageText">Katamari Damacy</p>
+        </div>
+
+        <div class="filterDiv OuterWorlds all action RPG alcoholic">
+            <a href="./Outer Worlds.html">
+                <img src="./images/OuterWorlds.JPG" alt="Outer Worlds image">
+            </a>
+            <p class="imageText">The Outer Worlds</p>
+        </div>
+
+        <!-- <div class="filterDiv FFXIV all fantasy action RPG alcoholic">
+            <a href="#">
+                <img src="./images/FFXIV_placeholder.jpeg" alt="FFXIV image">
+            </a>
+            <p class="imageText">Final Fantasy XIV</p>
+        </div> -->
+       
+        <!-- add any more drinks here -->
+
+    </div>
+
+        <!------------------** END OF MY CODE **------------------>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer starts here!! -->
+  <footer>
+
+    <div class="Container">
+        <div class="Left-Table">
+            <table class="CFG-Table">
+                <tr>
+                  <th class="CFG-Table-Title">A huge thanks to 
+                    <a href="https://codefirstgirls.org.uk/"target="_blank" class="CFG-Website">Code First Girls</a>  
+                      for running this course!</th>
+                </tr>
+                <tr>
+                  <td class="Socials">
+                    <a href="https://www.instagram.com/codefirstgirls/" role="button" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.facebook.com/codefirstgirls" role="button" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="https://twitter.com/CodeFirstGirls" role="button" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/company/code-first-girls" role="button" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                  </td>
+                </tr>
+              </table>
+        
+        </div>
+        
+        
+        <!-- Quick Links starts here!! -->
+        <div class="Right-Table">
+            <table class="Links-Table">
+                <tr>
+                 <th class="Footer-Quick-Links-Title">Quick Links</th>
+                </tr>
+                <tr><td class="Footer-Links-List-Items"><a href="./index.html">Home</a></td></tr>
+                <tr></tr><td class="Footer-Links-List-Items"><a href="./About Us.html">About Us</a></td></tr>
+                <tr></tr><td class="Footer-Links-List-Items"><a href="./all drinks.html">All Drinks</a></td></tr>
+                <tr><td class="Footer-Links-List-Items"><a href="./randomiser.html">Randomiser</a></td></tr>
+            </table>
+        </div>
+    </div>
+        <!-- Quick Links end here!! -->
+
+</footer> 
+</body>
+</html>

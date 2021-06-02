@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<Head>
+  <title>Drinks as Games</title>
+  <link rel="shortcut icon" type="image/jpg" href="images/Drink Favicon.png"/>
+    <link rel="stylesheet" href="Styles/main.css">
+    <script src="Javascript/Home.js"></script>
+    <script src="https://kit.fontawesome.com/95c264b0d3.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</Head>
+
+<body>
+    <!-- Header starts here!! -->
+    <header class="Header">
+        <h1 class="Title">Games As Drinks</h1>
+
+        <!-- Navigation starts here!! -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="./About Us.html">About Us</a>
+          <a href="./all drinks.html">All Drinks</a>
+          <a href="./randomiser.html">Randomiser</a>
+          <a href="./Hades wine page.html">Hades Drink</a>
+          <a href="./Skyrim Nord Mead Page.html">Skyrim Drink</a>
+          <a href="./Animal Crossing Smoothie.html">Animal Crossing Drink</a>
+          <a href="./Witcher Swallow page.html">The Witcher 3 Drink</a>
+          <a href="./Katamari Stacked Milkshake.html">Katamari Damacy Drink</a>
+          <a href="./Okami Sake.html">Ōkami Drink</a>
+          <a href="./Kirby Boba.html">Kirby All Stars Drink</a>
+          <a href="./Outer Worlds.html">Outer Worlds</a>
+      </div>
+      
+      <span onclick="openNav()" class="Hamburger">☰</span>
+      <!-- Navigation ends here!! -->
+
+      <!-- Search Function starts here!! -->
+      <form id="headersearch">
+        <input type="search" placeholder="Search">
+      </form>
+      <!-- Search Funtion ends here!! -->
+
+    </header>
+    <!-- Header ends here!! -->
+
+<!-- image Carousel starts here!! -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade" style="display: block;">
+      <div class="numbertext">1 / 7</div>
+      <img src="images/hades.png" style="width:100%">
+      <div class="text">Hades</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 7</div>
+      <img class="img-carousel" src="images/skyrim.png" style="width:100%">
+      <div class="text">Skyrim</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 7</div>
+      <img src="images/animal_crossing.png" style="width:100%">
+      <div class="text">Animal Crossing New Horizons</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 7</div>
+        <img src="images/witcher.jpg" style="width:100%">
+        <div class="text">The Witcher 3</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 7</div>
+        <img src="images/katamari.png" style="width:100%">
+        <div class="text">Katamari Damacy</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 7</div>
+        <img src="images/Ookami.png" style="width:100%">
+        <div class="text">Ōkami</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">7 / 7</div>
+        <img src="images/Kirby.png" style="width:100%">
+        <div class="text">Kirby All Stars</div>
+    </div>
+
+    <!-- <div class="mySlides fade">
+        <div class="numbertext">8 / 10</div>
+        <img src="images/Pink.png" style="width:100%">
+        <div class="text">Pink</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">9 / 10</div>
+        <img src="images/Purple.png" style="width:100%">
+        <div class="text">Purple</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">10 / 10</div>
+        <img src="images/Red.jpeg" style="width:100%">
+        <div class="text">Red</div>
+    </div> -->
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <!-- <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span> -->
+  </div>
+<!-- image Carousel ends here!! -->
+
+<!-- About the Page starts here!! -->
+<h2 class="About-Info-Title">Information about Games as Drinks</h2>
+  <p class="About-Info-Text">Games as Drinks is a website that reimagines a range of different games as a selection of drinks, ranging from milkshakes to Sake. The website has been built under the guidance of CodeFirstGirls, a huge thanks to them! We hope you enjoy exploring Games as Drinks!</p>
+
+<!-- About the Page ends here!! -->
+
+
+<!-- Footer starts here!! -->
+<footer>
+<div class="Container">
+<div class="Left-Table">
+    <table class="CFG-Table">
+        <tr>
+          <th class="CFG-Table-Title">A huge thanks to 
+            <a href="https://codefirstgirls.org.uk/"target="_blank" class="CFG-Website">Code First Girls</a>  
+              for running this course!</th>
+        </tr>
+        <tr>
+          <td class="Socials">
+            <a href="https://www.instagram.com/codefirstgirls/" role="button" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://www.facebook.com/codefirstgirls" role="button" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="https://twitter.com/CodeFirstGirls" role="button" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="https://www.linkedin.com/company/code-first-girls" role="button" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+          </td>
+        </tr>
+      </table>
+
+   
+</div>
+
+
+<!-- Quick Links starts here!! -->
+<div class="Right-Table">
+    <table class="Links-Table">
+        <tr>
+         <th class="Footer-Quick-Links-Title">Quick Links</th>
+        </tr>
+         <tr><td class="Footer-Links-List-Items"><a href="./index.html">Home</a></td></tr>
+         <tr></tr><td class="Footer-Links-List-Items"><a href="./About Us.html">About Us</a></td></tr>
+         <tr></tr><td class="Footer-Links-List-Items"><a href="./all drinks.html">All Drinks</a></td></tr>
+         <tr><td class="Footer-Links-List-Items"><a href="./randomiser.html">Randomiser</a></td></tr>
+    </table>
+</div>
+</div>
+<!-- Quick Links end here!! -->
+
+</footer>
+<!-- Footer ends here!! -->
+
+</body>
+
+</html>

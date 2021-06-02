@@ -1,0 +1,141 @@
+/* Master Font Here!! */
+body{
+  font-family:'Roboto', sans-serif;;
+  margin: 0;
+}
+
+/* Header starts here!! */
+.Header{
+ background-color: #ffb511; 
+  top: 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Title starts here!! */
+.Title{
+  font-size: 5vw;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 48px;
+    
+}
+/* Title ends here!! */
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+  /* Navigation Hamburger button*/
+.Hamburger {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  cursor: pointer;
+  font-size: 36px
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+* {box-sizing:border-box}
+
+
+/* Search Funtion starts here!! */
+#headersearch input::-webkit-search-decoration,
+#headersearch input::-webkit-search-cancel-button {
+display: none; 
+}
+#headersearch input[type=search] {
+outline: none;
+width: 15px;
+padding-left: 10px;
+color: transparent;
+cursor: pointer;
+float: right;
+background: #ffb511 url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+border: 2px solid black;
+padding: 9px 10px 9px 32px;
+width: 55px;
+
+-webkit-border-radius: 10em;
+-moz-border-radius: 10em;
+border-radius: 10em;
+
+-webkit-transition: all .5s;
+-moz-transition: all .5s;
+transition: all .5s;
+}
+#headersearch input[type=search]:hover {
+background-color: #fff;
+}
+#headersearch input[type=search]:focus {
+width: 150px;
+padding-left: 32px;
+color: #000;
+background-color: #fff;
+cursor: auto;
+width: 130px;
+background-color: #fff;
+border: 2px solid black;
+}
+#headersearch input:-moz-placeholder {
+color: transparent;
+}
+#headersearch input::-webkit-input-placeholder {
+color: transparent;
+}
+
+input{
+  float: right;
+  align-content: center;
+}
+
+.search{
+position: absolute;
+top: 40px;
+right: 40px;
+}
+
+/* Search Function ends here!! */
+
+/* Header ends here!! */
